@@ -17,8 +17,9 @@ app.use(cors());
 
 app.use(router);
 app.get('/', (req, res) => {
-    return res.send("Welcome to express!");
+    return res.send(req)
 })
+ 
 
 // middlewares después de las rutas
 app.use(errorHandler)
